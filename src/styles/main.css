@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fc1e8a;
+    font-size: 1.6rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+    padding: 4rem 6rem;
+}
+
+
+h2 {
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+/* Área do jogo - renderizado de forma dinâmica */
+.game {
+    width: 43rem;
+    height: 43rem;
+    border: .1rem solid #f00;
+    display: flex;
+    /* Quando o elemento não couber mais na linha, manda p/ a linha seguinte*/
+    flex-wrap: wrap; 
+    gap: 1rem;
+
+    /* Para animações - virada das cartas */
+    transform-style: preserve-3d;
+    perspective: 50rem;
+}
+
+/* Items que serão criados dinamicamente */
+.item {
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.reset {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.reset:focus {
+    background-color: #262809;
+    color: #ec38bc;
+}
