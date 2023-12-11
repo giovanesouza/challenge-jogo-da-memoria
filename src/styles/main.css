@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fc1e8a;
+    background-color: #bd1efc;   
     font-size: 1.6rem;
     /*Desabilita seleção de elementos*/
     user-select: none;
